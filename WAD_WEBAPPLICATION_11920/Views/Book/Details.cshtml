@@ -1,0 +1,66 @@
+﻿@model WAD_WEBAPPLICATION_11920.Models.Book
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Book</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BookTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ISBN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ISBN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Author)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Author)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IssuedYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IssuedYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Borrower)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Borrower)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BorrowerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BorrowerName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
